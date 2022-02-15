@@ -47,8 +47,9 @@ body {
 .flex {
   display: flex;
 }
-
-/* FONTS */
+/* ============================= */
+/* =========== FONTS =========== */
+/* ============================= */
 /* Helvetica Now Display Regular */
 @font-face {
   font-family: "Helvetica Now Display";
@@ -62,7 +63,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-/* Helvetica NowBold */
+/* Helvetica Now Display Bold */
 @font-face {
   font-family: "Helvetica Now Display";
   src: url("HelveticaNowDisplay-Bold.eot");
@@ -74,7 +75,7 @@ body {
   font-weight: bold;
   font-style: normal;
 }
-/* ExtraBold */
+/* Helvetica Now Display ExtraBold */
 @font-face {
   font-family: "Helvetica Now Display";
   src: url("HelveticaNowDisplay-ExtraBold.eot");
@@ -87,12 +88,35 @@ body {
   font-weight: 800;
   font-style: normal;
 }
+/* RetroKing Rough */
+@font-face {
+  font-family: "retrokingrough";
+  src: url("retroking-rough-webfont.woff2") format("woff2"),
+    url("retroking-rough-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .body-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 1rem; */
+  background: url(/images/teddy-map.png);
+  /* background-size: 100%; */
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
 }
+
+.brand-font {
+  font-family: "retrokingrough";
+  color: #000000;
+  text-align: center;
+  padding-top: 2rem;
+  opacity: 80%;
+  mix-blend-mode: overlay;
+}
+
 .title {
   font-family: "Helvetica Now Display";
   font-weight: 700;
