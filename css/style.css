@@ -9,14 +9,47 @@
   --trail-green: #7bb547;
   --trail-teal: #3b9fb5;
   --trail-grey: #687f8c;
+  --grid-a: 2;
+  --grid-b: 4;
+  --grid-c: 6;
+  --grid-d: 8;
+  --grid-e: 12;
+}
+
+.ln {
+  border: 1px solid #424242;
 }
 
 body {
-  padding: 1rem;
+  font-family: "Helvetica Now Display";
+}
+
+.grid-2 {
+  grid-column: span var(--grid-a);
+}
+
+.grid-4 {
+  grid-column: span var(--grid-b);
+}
+
+.grid-6 {
+  grid-column: span var(--grid-c);
+}
+
+.grid-8 {
+  grid-column: span var(--grid-d);
+}
+
+.grid-12 {
+  grid-column: span var(--grid-e);
+}
+
+.flex {
+  display: flex;
 }
 
 /* FONTS */
-/* Regular */
+/* Helvetica Now Display Regular */
 @font-face {
   font-family: "Helvetica Now Display";
   src: url("HelveticaNowDisplay-Regular.eot");
@@ -29,7 +62,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-/* Bold */
+/* Helvetica NowBold */
 @font-face {
   font-family: "Helvetica Now Display";
   src: url("HelveticaNowDisplay-Bold.eot");
@@ -55,8 +88,26 @@ body {
   font-style: normal;
 }
 
-.test {
+.body-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+.title {
   font-family: "Helvetica Now Display";
-  font-weight: 300;
+  font-weight: 700;
   font-style: normal;
+  font-size: 26px;
+}
+
+.distance {
+  color: var(--trail-teal);
+}
+
+#teddy-map {
+  width: 100vw;
+}
+
+.hike-info {
+  text-align: center;
 }
