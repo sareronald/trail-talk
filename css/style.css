@@ -10,3 +10,53 @@
   --trail-teal: #3b9fb5;
   --trail-grey: #687f8c;
 }
+
+body {
+  padding: 1rem;
+}
+
+/* FONTS */
+/* Regular */
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("HelveticaNowDisplay-Regular.eot");
+  src: local("Helvetica Now Display Regular"),
+    local("HelveticaNowDisplay-Regular"),
+    url("HelveticaNowDisplay-Regular.eot?#iefix") format("embedded-opentype"),
+    url("HelveticaNowDisplay-Regular.woff2") format("woff2"),
+    url("HelveticaNowDisplay-Regular.woff") format("woff"),
+    url("HelveticaNowDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Bold */
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("HelveticaNowDisplay-Bold.eot");
+  src: local("Helvetica Now Display Bold"), local("HelveticaNowDisplay-Bold"),
+    url("HelveticaNowDisplay-Bold.eot?#iefix") format("embedded-opentype"),
+    url("HelveticaNowDisplay-Bold.woff2") format("woff2"),
+    url("HelveticaNowDisplay-Bold.woff") format("woff"),
+    url("HelveticaNowDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+/* ExtraBold */
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("HelveticaNowDisplay-ExtraBold.eot");
+  src: local("Helvetica Now Display ExtBd"),
+    local("HelveticaNowDisplay-ExtraBold"),
+    url("HelveticaNowDisplay-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("HelveticaNowDisplay-ExtraBold.woff2") format("woff2"),
+    url("HelveticaNowDisplay-ExtraBold.woff") format("woff"),
+    url("HelveticaNowDisplay-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+.test {
+  font-family: "Helvetica Now Display";
+  font-weight: 300;
+  font-style: normal;
+}
