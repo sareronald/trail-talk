@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #f4f4f4;
+  --trail-green: #7bb547;
+  --trail-teal: #3b9fb5;
+  --trail-grey: #687f8c;
+}
