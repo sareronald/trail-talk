@@ -92,17 +92,16 @@ body {
 @font-face {
   font-family: "retrokingrough";
   src: url("retroking-rough-webfont.woff2") format("woff2"),
-    url("retroking-rough-webfont.woff") format("woff");
+    url("retroking-rough-webfont.woff") format("woff"),
+    url("/fonts/RetroKing/Retroking-Rough.woff") format("woff"),
+    url("/fonts/RetroKing/Retroking-Rough.ttf") format("truetype"),
+    url("/fonts/RetroKing/Retroking-Rough.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 .body-container {
-  /* display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 1rem; */
   background: url(/images/teddy-map.png);
-  /* background-size: 100%; */
   background-size: cover;
   width: 100vw;
   height: 80vh;
