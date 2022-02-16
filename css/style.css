@@ -13,7 +13,8 @@
   --grid-b: 4;
   --grid-c: 6;
   --grid-d: 8;
-  --grid-e: 12;
+  --grid-e: 10;
+  --grid-f: 12;
 }
 
 .ln {
@@ -40,8 +41,12 @@ body {
   grid-column: span var(--grid-d);
 }
 
-.grid-12 {
+.grid-10 {
   grid-column: span var(--grid-e);
+}
+
+.grid-12 {
+  grid-column: span var(--grid-f);
 }
 
 .flex {
@@ -100,11 +105,11 @@ body {
   font-style: normal;
 }
 
-.body-container {
+.map-container {
   background: url(/images/teddy-map.png);
   background-size: cover;
   width: 100vw;
-  height: 80vh;
+  height: 81vh;
 }
 
 .brand-font {
@@ -116,15 +121,28 @@ body {
   mix-blend-mode: overlay;
 }
 
+.container-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  width: 100vw;
+  top: 80vh;
+  background-color: #ffffff;
+}
+
 .title {
   font-family: "Helvetica Now Display";
   font-weight: 700;
   font-style: normal;
   font-size: 26px;
+  text-align: center;
 }
 
 .distance {
   color: var(--trail-teal);
+  font-weight: 800;
+  padding-top: 0.5rem;
 }
 
 #teddy-map {
@@ -133,4 +151,30 @@ body {
 
 .hike-info {
   text-align: center;
+}
+
+.hike-data {
+  text-align: center;
+  border: 2px #c4c4c4 solid;
+  border-left: 0;
+}
+
+.duration {
+  border-right: 0;
+}
+
+.small-text {
+  font-size: 12px;
+  padding: 20px;
+}
+
+.hike-button {
+  background-image: linear-gradient(120deg, #aabf79, #7bb547);
+  padding: 12px 25px;
+  border-radius: 16px;
+  border: 1.16px dashed rgba(0, 0, 0, 0.2);
+}
+
+.hike-padding {
+  margin: 25px 35px;
 }
