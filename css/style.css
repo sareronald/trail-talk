@@ -10,6 +10,8 @@
   --trail-light-green: #aabf79;
   --trail-teal: #3b9fb5;
   --trail-grey: #687f8c;
+  --trail-brown: #e8c7c5;
+  --trail-black: #252525;
 
   --grid-a: 2;
   --grid-b: 4;
@@ -218,22 +220,103 @@ body {
 .container-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  /* border-radius: 8px 8px 0 0; */
+  border-radius: 4px;
   width: 100vw;
   background-color: #ffffff;
+  padding: 8px 12px;
+}
+
+#trail-illustration {
+  height: 50vh;
+}
+
+.avatar {
+  background-image: url(/images/avatar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: var(--trail-teal) solid 2px;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  align-items: center;
+  top: 50px;
+  left: 30px;
+}
+
+.searchLocation {
+  border-radius: 50px;
+  border: var(--trail-teal) solid 1px;
+  width: 70vw;
+  height: 30px;
+  padding-left: 10px;
+  margin-left: 15vw;
+  position: absolute;
+  top: 30vh;
+}
+
+.dash-btn-container {
+  position: absolute;
+  top: 40vh;
+  padding-bottom: 15px;
+  border-bottom: rgba(0, 0, 0, 0.3) solid 2px;
+}
+
+.dash-button {
+  padding: 10px 11px 6px 11px;
+  margin: 0.5rem;
+  width: 169px;
+  color: white;
+  border: 1.16px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 4.34px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+
+.btn-text {
+  padding-left: 35px;
+}
+
+.list-btn {
+  background-color: var(--trail-teal);
+}
+
+.trail-btn {
+  background-color: var(--trail-brown);
+}
+
+.featured-hikes {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-size: 26px;
+  color: var(--trail-black);
 }
 
 .trail-card {
-  margin: 24px 0;
+  margin: 0 0 16px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
-.pinnacle-image {
-  background-image: url(/images/pinnacle.jpg);
+.card-image {
   background-repeat: no-repeat;
   background-size: cover;
   /* background-size: auto; */
   justify-content: center;
-  height: 113px;
+  height: 151px;
   width: 100vw;
+  border-radius: 4px 4px 0 0;
+}
+
+.pinnacle-image {
+  background-image: url(/images/pinnacle.jpg);
+}
+
+.cali-image {
+  background-image: url(/images/cali.png);
+}
+
+.canyon-image {
+  background-image: url(/images/canyon.png);
 }
