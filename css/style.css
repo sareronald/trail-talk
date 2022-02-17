@@ -166,7 +166,7 @@ body {
   padding-right: 40px;
 }
 
-.distance {
+.teal-text {
   color: var(--trail-teal);
   font-weight: 800;
   padding-top: 0.5rem;
@@ -178,6 +178,7 @@ body {
 
 .hike-info {
   text-align: center;
+  font-weight: 700;
 }
 
 .hike-data {
@@ -199,6 +200,16 @@ body {
   color: rgba(0, 0, 0, 0.3);
   font-size: 12.25px;
 }
+
+.left-labels {
+  padding-right: 8px;
+}
+
+.align-labels {
+  align-items: center;
+  margin: 5px 0;
+}
+
 .small-text {
   font-size: 12px;
   padding: 20px;
@@ -223,7 +234,7 @@ body {
   border-radius: 4px;
   width: 100vw;
   background-color: #ffffff;
-  padding: 8px 12px;
+  padding: 8px 0 8px 12px;
 }
 
 #trail-illustration {
@@ -302,7 +313,6 @@ body {
 .card-image {
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-size: auto; */
   justify-content: center;
   height: 151px;
   width: 100vw;
@@ -320,3 +330,44 @@ body {
 .canyon-image {
   background-image: url(/images/canyon.png);
 }
+
+.tag-underline {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+.tag-underline:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 0;
+  width: 50px;
+  border: 2px solid var(--trail-green);
+  border-radius: 10px;
+}
+
+.hike-info {
+  padding: 0 2px;
+}
+
+/* === TEDDYS LOOKOUT === */
+.teddys-image {
+  background: url(/images/teddys.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 30vh;
+}
+
+.teddys-data {
+  text-align: left;
+  padding: 12px;
+  width: 7rem;
+}
+
+/* .side-tab {
+  padding: ;
+} */
