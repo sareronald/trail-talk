@@ -5,21 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image" /> -->
-    <title>Map Talk</title>
+    <title>Trail Talk Map</title>
     <!-- Link to css document -->
     <link rel="stylesheet" href="css/style.css" />
     <!--Font Awesome CDN Stylesheet-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    <script
+      src="https://kit.fontawesome.com/e843286fe3.js"
       crossorigin="anonymous"
-    />
+    ></script>
     <!-- ADD Global site tag (gtag.js) - Google Analytics -->
   </head>
 
   <body>
     <div class="map-container">
+      <!-- <i class="fa fa-chevron-square-left ln"></i> -->
+      <div class="back-button">
+        <svg
+          width="33"
+          height="38"
+          viewBox="0 0 33 38"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_d_439_5825)">
+            <rect
+              width="13.3743"
+              height="4.86338"
+              rx="2"
+              transform="matrix(0.714462 -0.699675 0.714462 0.699675 10 19.3577)"
+              fill="#252525"
+            />
+            <rect
+              width="13.3743"
+              height="4.86338"
+              rx="2"
+              transform="matrix(-0.714462 -0.699675 -0.714462 0.699675 23.0305 25.3733)"
+              fill="#252525"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_d_439_5825"
+              x="0.837158"
+              y="0.819702"
+              width="31.3562"
+              height="37.1366"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+              />
+              <feOffset />
+              <feGaussianBlur stdDeviation="5" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_439_5825"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_439_5825"
+                result="shape"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </div>
       <div class="brand-font">
         <h2>Trail</h2>
         <h2>Talk</h2>
@@ -30,20 +92,20 @@
         Teddy's Lookout
       </h1>
       <p class="distance grid-2">2.4km</p>
-      <div class="grid-6 hike-data percentage">
-        <p>Percent Complete</p>
-        <h2>24%</h2>
+      <div class="grid-6 hike-data percentage grey-background">
+        <p class="grey-labels">Percent Complete</p>
+        <h3>24%</h3>
       </div>
-      <div class="grid-6 hike-data duration">
-        <p>Total Duration</p>
-        <h2>12 min</h2>
+      <div class="grid-6 hike-data duration grey-background">
+        <p class="grey-labels">Total Duration</p>
+        <h3>12 min</h3>
       </div>
-      <div class="grid-6">
+      <div class="grid-6 grey-background">
         <p class="small-text">
           You can begin the hike when you are within range of the trail.
         </p>
       </div>
-      <div class="grid-6 hike-padding">
+      <div class="grid-6 hike-padding grey-background">
         <button class="hike-button">Begin Hike</button>
       </div>
     </div>

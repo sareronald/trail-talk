@@ -7,8 +7,10 @@
 :root {
   --background-color: #f4f4f4;
   --trail-green: #7bb547;
+  --trail-light-green: #aabf79;
   --trail-teal: #3b9fb5;
   --trail-grey: #687f8c;
+
   --grid-a: 2;
   --grid-b: 4;
   --grid-c: 6;
@@ -112,6 +114,19 @@ body {
   height: 81vh;
 }
 
+.back-button {
+  background: url(/images/chevron-left.svg);
+  background-repeat: no-repeat;
+  height: 38px;
+  width: 36px;
+  position: absolute;
+  top: 44px;
+  left: 29px;
+  background-image: linear-gradient(120deg, #aabf79, #7bb547);
+  border-radius: 4px;
+  color: #000000;
+}
+
 .brand-font {
   font-family: "retrokingrough";
   color: #000000;
@@ -129,6 +144,7 @@ body {
   width: 100vw;
   top: 80vh;
   background-color: #ffffff;
+  padding-top: 16px;
 }
 
 .title {
@@ -136,7 +152,9 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 26px;
-  text-align: center;
+  text-align: right;
+  padding-bottom: 16px;
+  padding-right: 35px;
 }
 
 .distance {
@@ -157,12 +175,21 @@ body {
   text-align: center;
   border: 2px #c4c4c4 solid;
   border-left: 0;
+  padding: 12px;
+}
+
+.grey-background {
+  background-color: var(--background-color);
 }
 
 .duration {
   border-right: 0;
 }
 
+.grey-labels {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 12.25px;
+}
 .small-text {
   font-size: 12px;
   padding: 20px;
@@ -173,8 +200,9 @@ body {
   padding: 12px 25px;
   border-radius: 16px;
   border: 1.16px dashed rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 .hike-padding {
-  margin: 25px 35px;
+  padding: 25px 35px;
 }
