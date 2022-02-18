@@ -10,6 +10,7 @@
   --trail-light-green: #aabf79;
   --trail-teal: #3b9fb5;
   --trail-grey: #687f8c;
+  --dark-grey: #808080;
   --trail-brown: #e8c7c5;
   --trail-black: #252525;
 
@@ -198,7 +199,8 @@ body {
 
 .grey-labels {
   color: rgba(0, 0, 0, 0.3);
-  font-size: 12.25px;
+  font-size: 12px;
+  line-height: 10px;
 }
 
 .left-labels {
@@ -207,11 +209,18 @@ body {
 
 .align-labels {
   align-items: center;
-  margin: 5px 0;
+  margin-bottom: 5px;
 }
 
 .small-text {
   font-size: 12px;
+}
+
+.description {
+  padding: 12px 12px 0 0;
+}
+
+.begin {
   padding: 20px;
 }
 
@@ -228,6 +237,13 @@ body {
 }
 
 /* Dashboard */
+#trail-illustration {
+  background: url(/images/trail-talk-dash.svg);
+  background-size: cover;
+  width: 100vw;
+  /* height: 81vh; */
+}
+
 .container-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -238,7 +254,18 @@ body {
 }
 
 #trail-illustration {
-  height: 50vh;
+  height: 320px;
+  width: 100vw;
+}
+
+.phone {
+  background-image: url(/images/phone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  width: 100vw;
+  height: 44px;
+  position: fixed;
 }
 
 .avatar {
@@ -263,13 +290,11 @@ body {
   padding-left: 10px;
   margin-left: 15vw;
   position: absolute;
-  top: 30vh;
+  top: 36vh;
 }
 
 .dash-btn-container {
-  position: absolute;
-  top: 40vh;
-  padding-bottom: 15px;
+  padding: 15px 0;
   border-bottom: rgba(0, 0, 0, 0.3) solid 2px;
 }
 
@@ -331,6 +356,21 @@ body {
   background-image: url(/images/canyon.png);
 }
 
+.hike-title {
+  font-family: "Helvetica Now Display";
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+}
+
+.hike-location {
+  font-family: "Helvetica Now Display";
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--dark-grey);
+  margin: 3px 10px;
+}
+
 .tag-underline {
   position: relative;
   display: inline-block;
@@ -347,6 +387,44 @@ body {
   height: 0;
   width: 50px;
   border: 2px solid var(--trail-green);
+  border-radius: 10px;
+}
+
+.tag-underline-red {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+.tag-underline-red:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 0;
+  width: 50px;
+  border: 2px solid #f03d3e;
+  border-radius: 10px;
+}
+
+.tag-underline-yellow {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+.tag-underline-yellow:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 0;
+  width: 50px;
+  border: 2px solid #ffea79;
   border-radius: 10px;
 }
 
