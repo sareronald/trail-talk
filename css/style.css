@@ -167,6 +167,16 @@ body {
   padding-right: 40px;
 }
 
+.title-left {
+  font-family: "Helvetica Now Display";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  text-align: left;
+  padding-bottom: 16px;
+  padding-left: 12px;
+}
+
 .teal-text {
   color: var(--trail-teal);
   font-weight: 800;
@@ -191,6 +201,10 @@ body {
 
 .grey-background {
   background-color: var(--background-color);
+}
+
+.white-background {
+  background-color: #ffffff;
 }
 
 .duration {
@@ -249,7 +263,6 @@ body {
   grid-template-columns: repeat(12, 1fr);
   border-radius: 4px;
   width: 100vw;
-  background-color: #ffffff;
   padding: 8px 0 8px 12px;
 }
 
@@ -437,7 +450,7 @@ body {
   background: url(/images/teddys.jpg);
   background-size: cover;
   width: 100vw;
-  height: 30vh;
+  height: 262px;
 }
 
 .teddys-data {
@@ -446,6 +459,80 @@ body {
   width: 7rem;
 }
 
-/* .side-tab {
-  padding: ;
-} */
+.icon-bar {
+  position: absolute;
+  top: 205px;
+}
+
+.top-tab {
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: absolute;
+  background-color: white;
+  width: 100vw;
+}
+
+.sub-tab {
+  color: var(--dark-grey);
+  background-color: white;
+  font-size: 16px;
+  padding: 5px;
+  border: 2px solid var(--dark-grey);
+  position: absolute;
+  top: 52px;
+  z-index: 5;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  position: relative;
+}
+
+.hike-specs {
+  padding-top: 85px;
+}
+
+.comments-avatar {
+  background-image: url(/images/avatar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: var(--trail-teal) solid 2px;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.black-text {
+  color: #000000;
+  font-weight: 800;
+  padding: 0.5rem 0.4rem;
+}
+
+.teddys-btns {
+  border-radius: 19px;
+  padding: 12px 25px;
+  border: 1.16px dashed rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 14px;
+  width: 200px;
+  margin-bottom: 14px;
+}
+
+#directions {
+  background-image: linear-gradient(120deg, #aabf79, #7bb547);
+  border-radius: 19px 0 0 19px;
+}
+
+#equipment {
+  background-image: linear-gradient(120deg, #4693b4, #8479ff);
+  border-radius: 19px 0 0 19px;
+}
+
+#start-trail {
+  background-image: linear-gradient(120deg, #b44646, #ff7999);
+  border-radius: 19px 0 0 19px;
+}
