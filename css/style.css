@@ -16,7 +16,9 @@
 
   --grid-a: 2;
   --grid-b: 4;
+  --grid-x: 5;
   --grid-c: 6;
+  --grid-y: 7;
   --grid-d: 8;
   --grid-e: 10;
   --grid-f: 12;
@@ -38,8 +40,16 @@ body {
   grid-column: span var(--grid-b);
 }
 
+.grid-5 {
+  grid-column: span var(--grid-x);
+}
+
 .grid-6 {
   grid-column: span var(--grid-c);
+}
+
+.grid-7 {
+  grid-column: span var(--grid-y);
 }
 
 .grid-8 {
@@ -125,16 +135,50 @@ body {
 }
 
 .back-button {
-  background: url(/images/chevron-left.svg);
-  background-repeat: no-repeat;
-  height: 38px;
-  width: 36px;
+  height: 41px;
+  width: 61px;
   position: absolute;
-  top: 44px;
-  left: 29px;
-  background-image: linear-gradient(120deg, #aabf79, #7bb547);
-  border-radius: 4px;
+  top: 58px;
+  left: -1px;
+  padding-left: 20px;
+  background-color: var(--trail-teal);
+  border-radius: 0 4px 4px 0;
+  border: 1.16px dashed rgba(0, 0, 0, 0.2);
   color: #000000;
+}
+
+.add-button {
+  height: 41px;
+  width: 61px;
+  position: absolute;
+  top: 58px;
+  right: -1px;
+  padding-right: 16px;
+  padding-top: 1px;
+  background-color: var(--trail-teal);
+  border-radius: 4px 0 0 4px;
+  border: 1.16px dashed rgba(0, 0, 0, 0.2);
+  color: #000000;
+}
+
+#weather {
+  height: 41px;
+  width: 76px;
+  position: absolute;
+  top: 112px;
+  right: -1px;
+  padding: 0 11px;
+  background-image: linear-gradient(120deg, #ebb62d, #fcff8a);
+  border-radius: 4px 0 0 4px;
+  border: 1.16px dashed rgba(0, 0, 0, 0.2);
+  color: #000000;
+  align-items: center;
+}
+
+.weather-text {
+  font-size: 14px;
+  font-weight: 700;
+  padding-right: 5px;
 }
 
 .brand-font {
@@ -491,7 +535,11 @@ body {
 }
 
 .hike-specs {
-  padding-top: 85px;
+  padding-top: 60px;
+}
+
+.hike-specs-padding {
+  padding-top: 20px;
 }
 
 .comments-avatar {
@@ -514,12 +562,16 @@ body {
 
 .teddys-btns {
   border-radius: 19px;
-  padding: 12px 25px;
+  padding: 12px;
   border: 1.16px dashed rgba(0, 0, 0, 0.2);
+  width: 250px;
+  margin-bottom: 14px;
+}
+
+.teddys-btn-text {
   color: white;
   font-size: 14px;
-  width: 200px;
-  margin-bottom: 14px;
+  padding-left: 5px;
 }
 
 #directions {
