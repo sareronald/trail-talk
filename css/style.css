@@ -144,7 +144,7 @@ body {
   background-color: var(--trail-teal);
   border-radius: 0 4px 4px 0;
   border: 1.16px dashed rgba(0, 0, 0, 0.2);
-  color: #000000;
+  text-decoration: none !important;
 }
 
 .add-button {
@@ -402,6 +402,10 @@ body {
   border-radius: 4px 4px 0 0;
 }
 
+.teddys-card {
+  text-decoration: none;
+}
+
 .pinnacle-image {
   background-image: url(/images/pinnacle.jpg);
 }
@@ -575,12 +579,14 @@ body {
   border: 1.16px dashed rgba(0, 0, 0, 0.2);
   width: 250px;
   margin-bottom: 14px;
+  text-decoration: none !important;
 }
 
 .teddys-btn-text {
   color: white;
   font-size: 14px;
   padding-left: 5px;
+  /* text-decoration: none !important; */
 }
 
 #directions {
@@ -593,9 +599,27 @@ body {
   border-radius: 19px 0 0 19px;
 }
 
-#start-trail {
+.start-trail-btn {
   background-image: linear-gradient(120deg, #b44646, #ff7999);
   border-radius: 19px 0 0 19px;
+  /* z-index: 12; */
+}
+
+.start-trail-btn::after {
+  background: red;
+  /* z-index: 11; */
+  animation: pulse 1000ms infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
 }
 
 .hiker-feedback {
@@ -625,5 +649,4 @@ body {
 
 .older-reports {
   text-align: center;
-  /* align-items: center; */
 }
