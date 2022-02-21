@@ -524,6 +524,16 @@ body {
   top: 190px;
 }
 
+.strike-through {
+  position: relative;
+}
+
+.stroke {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
 .icon {
   margin: 4px 6px;
 }
