@@ -351,23 +351,23 @@ body {
 }
 
 .dash-btn-container {
-  padding: 15px 0;
+  padding: 0 0 15px 0;
   border-bottom: rgba(0, 0, 0, 0.3) solid 2px;
 }
 
 .dash-button {
   padding: 10px 11px 6px 11px;
-  margin: 0.5rem;
+  margin: 0.2rem 0.5rem;
   width: 169px;
   color: white;
   border: 1.16px dashed rgba(0, 0, 0, 0.2);
-  border-radius: 4.34px;
+  border-radius: 16px;
   font-size: 12px;
   letter-spacing: 0.1em;
 }
 
 .btn-text {
-  padding-left: 35px;
+  padding-left: 25px;
 }
 
 .list-btn {
@@ -376,6 +376,17 @@ body {
 
 .trail-btn {
   background-color: var(--trail-brown);
+}
+
+.near-me-btn {
+  background-image: linear-gradient(120deg, #aabf79, #7bb547);
+  width: 193px;
+  margin: 0 auto;
+}
+
+.top-button {
+  width: 193px;
+  text-align: center;
 }
 
 .featured-hikes {
@@ -510,7 +521,11 @@ body {
 
 .icon-bar {
   position: absolute;
-  top: 205px;
+  top: 190px;
+}
+
+.icon {
+  margin: 4px 6px;
 }
 
 .top-tab {
@@ -535,7 +550,7 @@ body {
   background-color: white;
   font-size: 16px;
   padding: 5px;
-  border: 2px solid var(--dark-grey);
+  border: 2px solid #dad7d7;
   position: absolute;
   top: 51px;
   z-index: 5;
@@ -556,15 +571,26 @@ body {
 }
 
 .comments-avatar {
-  background-image: url(/images/avatar.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
-  border: var(--trail-teal) solid 2px;
+  /* border: var(--trail-teal) solid 2px; */
   width: 24px;
   height: 24px;
   align-items: center;
   margin-top: 0.5rem;
+}
+
+.avatar1 {
+  background-image: url(/images/avatar.png);
+}
+
+.avatar2 {
+  background-image: url(/images/kristen.png);
+}
+
+.avatar3 {
+  background-image: url(/images/maddison.png);
 }
 
 .black-text {
